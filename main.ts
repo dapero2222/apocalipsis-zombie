@@ -384,7 +384,7 @@ info.onCountdownEnd(function () {
         ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
         ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
         `, SpriteKind.Player)
-    tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+    tiles.placeOnRandomTile(mySprite, sprites.skillmap.islandTile4)
     mySprite3.setFlag(SpriteFlag.RelativeToCamera, true)
     mySprite2.setFlag(SpriteFlag.RelativeToCamera, true)
     mySprite2.setPosition(83, 90)
@@ -805,7 +805,7 @@ game.onUpdateInterval(500, function () {
     }
 })
 game.onUpdateInterval(100, function () {
-    if (puntos == 300 && info.life() == 100) {
+    if (puntos == 500) {
         color.startFadeFromCurrent(color.White, 500)
         game.setGameOverPlayable(true, music.melodyPlayable(music.spooky), false)
         game.setGameOverMessage(true, "GRACIAS POR JUGAR")
@@ -1024,7 +1024,7 @@ game.onUpdateInterval(100, function () {
             ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
             ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
             `, SpriteKind.Player)
-        tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+        tiles.placeOnRandomTile(mySprite, sprites.skillmap.islandTile4)
         mySprite3.setFlag(SpriteFlag.RelativeToCamera, true)
         mySprite2.setFlag(SpriteFlag.RelativeToCamera, true)
         mySprite2.setPosition(83, 90)
@@ -1247,7 +1247,7 @@ game.onUpdateInterval(100, function () {
             ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
             ...........fccbbbbbbbbbbbbbbbbbbbbbbccf...........
             `, SpriteKind.Player)
-        tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+        tiles.placeOnRandomTile(mySprite, assets.tile`tile46`)
         mySprite3.setFlag(SpriteFlag.RelativeToCamera, true)
         mySprite2.setFlag(SpriteFlag.RelativeToCamera, true)
         mySprite2.setPosition(83, 90)
